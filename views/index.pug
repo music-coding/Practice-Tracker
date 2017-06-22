@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .main.container.row
+    h1 Record your practice!
+    form.form-inline(method='POST', action='/index')
+      label.sr-only(for='day') Day
+      |
+      input#name.form-control.mb-2.mr-sm-2.mb-sm-0(type='text', placeholder='MM/DD/YY', name='day')
+      |
+      label.sr-only(for='time') Time
+      .input-group.mb-2.mr-sm-2.mb-sm-0
+
+        |
+        input#time.form-control(type='text', placeholder='minutes', name='time')
+      |
+      button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  if currentUser != "58e4f2cb75d58d0f4ce69f4e"
+    .main.container
+      ul
+      each log in logs
+       li  #{log.day} : #{log.time}
+  if currentUser === "58e4f2cb75d58d0f4ce69f4e"
+    .main.container
+    
+      ul
+      each log in logs
+       li  #{log.day} : #{log.time}

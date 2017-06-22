@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+
+        if currentRole != "admin"
+          .main.container
+           h1 #{currentName}
+            ul
+            each log in logs
+             li  #{log.day} : #{log.time}
+        if currentRole === "admin"
+          .main.container
+            ul#buttons
+            each user in users
+             li
+                a(href = user.name) #{user.name}

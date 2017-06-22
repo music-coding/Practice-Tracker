@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .main.container.row
+    h1 Register here YO!
+    form.form-horizontal(method='POST', action='/register')
+      .form-group
+        label.col-sm-2.control-label(for='email') Email
+        .col-sm-10
+          input#inputEmail3.form-control(type='email', placeholder='Email', name='email')
+      .form-group
+        label.col-sm-2.control-label(for='name') Name
+        .col-sm-10
+          input#inputEmail3.form-control(type='name', placeholder='Name', name='name')
+      .form-group
+        label.col-sm-2.control-label(for='inputPassword') Password
+        .col-sm-10
+          input#inputPassword3.form-control(type='password', placeholder='Password', name='password')
+      .form-group
+        label.col-sm-2.control-label(for='instrument') Instrument
+        .col-sm-10
+          input#instrument.form-control(type='instrument', placeholder='Violin', name='instrument')
+      .form-group
+        .col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type='submit') Register
