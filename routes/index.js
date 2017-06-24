@@ -37,61 +37,10 @@ router.get("/logg", function(req, res, next){
 
 
 
+//Here you go
 
 
-//Get /todolist   I have this set to getting the logs for now until I change it to do list
-//
-// router.get('/todo',mid.requiresLogin, function(req, res, next){
-//   if(req.session.userId === "58e4f2cb75d58d0f4ce69f4e"){
-//     Todo.find({}, function(err, docs) {
-//         if(err) {
-//         return res.json(err);
-//       }  else {
-//         return res.render('todo', {todos: docs});
-//       }
-//     });
-//   }
-//
-//   else if(req.session.userId !== "58e4f2cb75d58d0f4ce69f4e") {
-//     Todo.find({'id':req.session.userId}, function(err, docs) {
-//         if(err) {
-//         return res.json(err);
-//       }  else {
-//         return res.render('todo', {todos: docs})
-//       }
-//     });
-//     }
-// });
-//
-//
-//
-// //POST /todo   figure out how to post to do list
-// router.post('/todo', function(req, res, next){
-//
-//       if(req.body.task) {
-//         var todoData = {
-//           task: req.body.task,
-//           id: req.session.userId }
-//
-//       Todo.create(todoData, function (error, log) {
-//               if (error) {
-//                 return next(error);
-//               } else {
-//                 console.log('logged');
-//                 return res.redirect('/todo');
-//               }
-//       });
-//   }
-//
-//     else {
-//       return res.send('all fields required');
-//     }
-//
-//
-// })
-
-
-
+//removed
 // GET /index
 router.get('/index',mid.requiresLogin, function(req, res, next){
   User.findById(req.session.userId)
