@@ -9,7 +9,7 @@ var mid = require('../middleware');
 
 //get students for Eva
 router.param("user", function(req,res,next,name){
-     if(req.session.userId === "58e4f2cb75d58d0f4ce69f4e"){
+     if(req.session.role === "admin"){
        User.find({name: name}, function(err, doc){
         if(err) return next(err);
         if(!doc) {
