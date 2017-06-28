@@ -14,9 +14,11 @@
     "nodemon": "^1.11.0",
     "pug": "^2.0.0-beta11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "fly": "^2.0.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC"
