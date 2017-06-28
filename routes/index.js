@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var Log = require('../models/log');
 var User = require('../models/user');
-var Todo = require('../models/todo');
 var mid = require('../middleware');
 
 
