@@ -6,8 +6,8 @@ var MongoStore = require('connect-mongo')(session);
 var app = express();
 
 // mongodb connection
-mongoose.connect("mongodb://admin:buttbutt1@ds143330.mlab.com:43330/heroku_z9kf43s7");
-// mongoose.connect("mongodb://localhost:27017/practice");
+// mongoose.connect("mongodb://admin:buttbutt1@ds143330.mlab.com:43330/heroku_z9kf43s7");
+mongoose.connect("mongodb://localhost:27017/practice");
 var db = mongoose.connection;
 // mongo error
 db.on('error', console.error.bind(console, 'connection error:'));
