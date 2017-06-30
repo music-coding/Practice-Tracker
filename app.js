@@ -5,8 +5,11 @@ var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
 var app = express();
 
+
+var uri = "mongodb://heroku_gssd4qm0:uvenjh3o36gl57ah5vbbcbp2oj@ds145292.mlab.com:45292/heroku_gssd4qm0";
+
 // mongodb connection
-mongoose.connect("mongodb://admin:buttbutt1@ds143330.mlab.com:43330/heroku_z9kf43s7");
+mongoose.connect(uri);
 // mongoose.connect("mongodb://localhost:27017/practice");
 var db = mongoose.connection;
 // mongo error
