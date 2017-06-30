@@ -6,7 +6,7 @@ var MongoStore = require('connect-mongo')(session);
 var app = express();
 
 
-var uri = "mongodb://heroku_gssd4qm0:uvenjh3o36gl57ah5vbbcbp2oj@ds145292.mlab.com:45292/heroku_gssd4qm0";
+var uri = "mongodb://admin:buttbutt1@ds145292.mlab.com:45292/heroku_gssd4qm0";
 
 // mongodb connection
 mongoose.connect(uri);
